@@ -33,16 +33,27 @@ height = int(input('cual es su altura en CM? '))
 
 if height >= 120:
     edad = int(input('cual es tu edad?: '))
-    foto = int(input("quieres una fotografia? ingresa la opcion 1 para si, o la 2 para no"))
-    if foto == 1:
-        print("debe pagar $3 extra")
-    if edad > 18:
-        print("debera pagar $12")
-    elif edad < 12:
-        print("debera pagar $5")
-    else:
-        print("debera pagar $7")
+    bill = 0
 
+    if edad > 18:
+        if edad >= 45 or edad <= 55:
+            print("Su entrada es GRATIS")
+        else:
+            print("Ticket para adulto cuesta $12")
+            bill = 12
+    elif edad < 12:
+        print("Ticket para niño cuesta $5")
+        bill = 5
+    else:
+        print("Ticket para joven cuesta $7")
+        bill = 7
+
+    foto = int(input("quieres una fotografia? (S o N) "))
+    if foto == "S":
+        print("debe pagar $3 extra")
+        bill += 3
+
+    print(f"\nEl total de su factura: ${bill}")
 else:
     print('no puedes subir la altura minima es 120 CM')
 
