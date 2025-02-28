@@ -9,7 +9,7 @@ if game == 0:
 else:
     print("escudo")"""
 
-friend = ["Vidal", "Kevin", "Maykel", "Bob", "Rita", "Keylin"]
+friend = ["Vidal", "Edgard", "Maykel", "Bob", "Rita", "Keylin"]
 
 # forma 1
 print(random.choice(friend))
