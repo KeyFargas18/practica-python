@@ -18,10 +18,10 @@ print(random.choice(friend))
 random_index = random.randint(0, 4)
 print(friend[random_index])
 
-print("Bienvenido al juego de piedra 🪨, papel 📃 o tijera ✂️")
-usuario = input("Favor elije una de las 3 opciones: ").lower()
+print("Bienvenido al juego de 0-piedra 🪨, 1-papel 📃, 2-tijera ✂️")
+usuario = int(input("Favor elije una de las 3 opciones pero con numeros: "))
 
-if usuario == "piedra":
+if usuario == 0:
     print('''
            ,--.--._
     ------" _, \___)
@@ -31,7 +31,7 @@ if usuario == "piedra":
            `-----"
     ''')
 
-elif usuario == "papel":
+elif usuario == 1:
     print('''
       .--""--.___.._
      (  <__>  )     `-.
@@ -41,7 +41,7 @@ elif usuario == "papel":
      `.__  __;' o!O
          ""     
     ''')
-elif usuario == "tijera":
+elif usuario == 2:
     print('''
       _       ,/'
        (_).  ,/'
@@ -57,15 +57,6 @@ machine = random.randint(0, 2)
 
 if machine == 0:
     print('''
-          _       ,/'
-           (_).  ,/'
-           __  ::
-          (__)'  `\.
-                    `\.
-        ''')
-
-elif machine == 1:
-    print('''
                ,--.--._
         ------" _, \___)
                 / _/____)
@@ -73,7 +64,8 @@ elif machine == 1:
         ------\     (__)
                `-----"
         ''')
-else:
+
+elif machine == 1:
     print('''
           .--""--.___.._
          (  <__>  )     `-.
@@ -83,29 +75,31 @@ else:
          `.__  __;' o!O
              ""     
         ''')
+else:
+    print('''
+          _       ,/'
+           (_).  ,/'
+           __  ::
+          (__)'  `\.
+                    `\.
+        ''')
 
-if usuario == "tijera" and machine == 0:
+if usuario == machine:
     print("Es un empate")
 
-elif usuario == "papel" and machine == 2:
-    print("Es un empate")
-
-elif usuario == "piedra" and machine == 1:
-    print("Es un empate")
-
-if usuario == "tijera" and machine == 2:
+if usuario == 0 and machine == 2:
     print("GANASTE")
 
-elif usuario == "tijera" and machine == 1:
+elif usuario == 2 and machine == 0:
     print("Computadora gana")
 
-if usuario == "papel" and machine == 1:
+if usuario == 1 and machine == 0:
     print("GANASTE")
-elif usuario == "papel" and machine == 0:
+elif usuario == 1 and machine == 2:
     print("Computadora gana")
 
-if usuario == "piedra" and machine == 0:
+if usuario == 0 and machine == 2:
     print("GANASTE")
 
-elif usuario == "piedra" and machine == 2:
+elif usuario == 0 and machine == 1:
     print("Computadora gana")
