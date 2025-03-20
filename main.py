@@ -36,7 +36,7 @@ if height >= 120:
     bill = 0
 
     if edad > 18:
-        if edad >= 45 or edad <= 55:
+        if 45 <= edad <= 55:  # edad >= 45 and edad <= 55
             print("Su entrada es GRATIS")
         else:
             print("Ticket para adulto cuesta $12")
@@ -48,7 +48,7 @@ if height >= 120:
         print("Ticket para joven cuesta $7")
         bill = 7
 
-    foto = int(input("quieres una fotografia? (S o N) "))
+    foto = int(input("Quieres una fotografia? (S o N) "))
     if foto == "S":
         print("debe pagar $3 extra")
         bill += 3

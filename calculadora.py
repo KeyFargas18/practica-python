@@ -1,5 +1,6 @@
 print("Bienvenido al programa de python pizza delivery")
 
+
 size = input("De que tamaño quiere la pizza? S, M o L \n")
 bill = 0
 if size == "S":
@@ -14,6 +15,7 @@ elif size == "L":
 else:
     print("Has escrito las entradas incorrectas, intentalo nuevamente")
 
+#
 pepperoni = input("Quiere agregar peperoni a su pizza? (S o N) \n")
 if pepperoni == "S":
     if size == "S":
@@ -23,7 +25,7 @@ if pepperoni == "S":
         print("El precio del extra es de $3")
         bill += 3
 
-extra_cheese = input("Desea agregar extra de queso? (S o N) \n")
+extra_cheese = input("Quiere agregar queso extra?")
 if extra_cheese == "S":
     print("El precio del extra de queso es de $1 \n")
     bill += 1
