@@ -50,7 +50,9 @@ nested_list = ["A", "B", ["C", "D"]]
 
 from Hangman_art import Martillo
 
+
 print(Martillo)
+
 
 should_continue = True
 gambling = {}
@@ -64,7 +66,7 @@ while should_continue:
     if bidders == 'no':
         should_continue = False
     elif bidders == 'si':
-        should_continue = True
+        print("\n" * 20)
     else:
         print('\nSu respuesta no es valida, vuelva a intentarlo')
 
