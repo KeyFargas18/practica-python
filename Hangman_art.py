@@ -3,3 +3,17 @@ word_list = [
     "zorro", "aguila", "halcon", "pinguino", "delfin", "tiburon", "ballena", "tortuga", "serpiente", "canguro",
     "koala", "camaleon", "murciélago", "mapache", "castor", "nutria", "erizo", "pulpo", "estrella de mar", "llama"
 ]
+
+Martillo = '''
+            _____________
+             \         /
+              )_______(
+              |"""""""|_.-._,.---------.,_.-._
+              |       | | |               | | ''-.
+              |       |_| |_             _| |_..-'
+              |_______| '-''- --------'' '-'
+              )"""""""(
+             /_________\\
+           .-------------.
+          /_______________\\
+'''
